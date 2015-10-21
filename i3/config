@@ -30,11 +30,12 @@ set $w5 5: ------
 set $w6 6: -Wall-
 
 ################################## Gaps
-gaps inner 42
-bindsym $mod+Shift+g gaps inner current plus 8
-bindsym $mod+Shift+h gaps inner current minus 8
-bindsym $mod+Shift+f gaps outer current minus 8
-bindsym $mod+Shift+b gaps outer current plus 8
+######################## Uncomment for use with i3-gaps
+#gaps inner 42
+#bindsym $mod+Shift+g gaps inner current plus 8
+#bindsym $mod+Shift+h gaps inner current minus 8
+#bindsym $mod+Shift+f gaps outer current minus 8
+#bindsym $mod+Shift+b gaps outer current plus 8
 
 
 ################################## Move
