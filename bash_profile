@@ -27,7 +27,8 @@ alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 ######################## Pacman
-alias pacS="sudo pacman -S"
+alias pacI="sudo pacman -S"
+alias pacS="sudo pacman -Ss"
 alias pacR="sudo pacman -R"
 alias pacU="sudo pacman -Syu"
 ######################## Singles
@@ -35,7 +36,15 @@ alias t="$TERMINAL"
 alias x="startx"
 alias v="vim"
 alias g="lynx www.google.com"
-alias w="wallchanger"
+alias w="killall -SIGUSR1 wallchanger && wallchanger &"
+######################## Git
+alias gs="git status"
+alias gl="git log"
+alias gp="git push"
+alias ga="git add"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gf="git pull"
 
 ################################## PATHs
 export PATH=$PATH:~/.local/bin
