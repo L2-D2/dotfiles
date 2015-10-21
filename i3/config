@@ -9,11 +9,9 @@ for_window [class="atom"] border none
 ################################## $VARS
 ######################## Mod Key
 set $mod Mod4
-######################## Term
-set $term urxvt -rv +sb
 ######################## Fonts
-set $font_bar DejaVu Sans Book 10px
-set $font_dmu Dejavu Sans:book:pixelsize=13
+font pango:DejaVu Sans Mono Book 8px
+set $font_11px Dejavu Sans Mono:book:pixelsize=11
 ######################## Colors
 set $blue	#3499DB
 set $green	#859900
@@ -29,7 +27,7 @@ set $w2 2: Second
 set $w3 3: Third 
 set $w4 4: Fourth
 set $w5 5: ------
-set $w6 6: Wall  
+set $w6 6: -Wall-
 
 ################################## Gaps
 gaps inner 42
@@ -38,8 +36,6 @@ bindsym $mod+Shift+h gaps inner current minus 8
 bindsym $mod+Shift+f gaps outer current minus 8
 bindsym $mod+Shift+b gaps outer current plus 8
 
-################################## Font
-font pango:$font_bar
 
 ################################## Move
 ######################## Mod+Mouse floats
@@ -62,9 +58,9 @@ bindsym $mod+Control+Right exec "i3-msg move right && i3-msg move right && i3-ms
 
 ################################## Control
 ######################## TERM
-bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+Return exec --no-startup-id uxterm -rv +sb -bw 0 -fa '$font_11px'
 ######################## DMENU
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_dmu'"
+bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
 ######################## Fullscreen
 bindsym $mod+f fullscreen
 ######################## W/Switch
@@ -81,8 +77,8 @@ bindsym $mod+Shift+3 move container to workspace $w3
 bindsym $mod+Shift+4 move container to workspace $w4
 bindsym $mod+Shift+5 move container to workspace $w5
 bindsym $mod+Shift+6 move container to workspace $w6
-######################## Split & Term
-bindsym $mod+Shift+s splitv; exec --no-startup-id $term
+######################## Split
+bindsym $mod+Shift+s splitv; exec --no-startup-id uxterm -rv +sb -bw 0 -fa '$font_11px'
 ######################## Tabbed Layout
 bindsym $mod+t layout tabbed
 ######################## New Wallchanger
@@ -98,7 +94,7 @@ bindsym $mod+Shift+r restart
 ######################## Exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'OMG SAVE EVERYTHING!!!' -b 'Yes, exit i3' 'i3-msg exit'"
 ######################## Lock Desktop
-bindsym $mod+Shift+l exec "~/bin/lock.sh"
+bindsym $mod+Shift+l exec "/usr/local/bin/i3lock-fancy/lock"
 ######################## Vol+
 bindsym $mod+minus exec /usr/bin/pactl set-sink-volume 0 '-5%' && killall -SIGUSR1 i3status
 ######################## Vol-
@@ -112,6 +108,7 @@ bindsym $mod+equal exec /usr/bin/pactl set-sink-volume 0 '+5%' && killall -SIGUS
 #client.urgent 			$magenta	$base2		$base2		$base2
 
 ################################## Bar
+######################## Command
 bar {
 	status_command i3status -c ~/.i3/i3status.conf
 	position top
