@@ -1,4 +1,4 @@
 # dotfiles
-dotfiles
 
-* run links.sh to make soft links
+* Clone where you want them to be
+* Run links.sh to make soft links
