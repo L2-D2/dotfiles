@@ -1,2 +1,2 @@
-source /home/tina/.bash_profile
+source $HOME/.bash_profile
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
