@@ -3,5 +3,7 @@ set rnu
 set smartindent
 set laststatus=2
 
-nmap <CR> o<Esc>
-nmap <S+Enter> O<Esc>
+nmap <S+Enter> o<Esc>
+nmap <C+Enter> O<Esc>
+nmap <C+Up> :m-2
+nmap <C+Down> :m+1
