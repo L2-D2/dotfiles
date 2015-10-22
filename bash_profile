@@ -45,6 +45,8 @@ alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
 alias gf="git pull"
+######################## Misc
+alias bat="upower --dump | less"
 
 ################################## PATHs
 export PATH=$PATH:~/.local/bin
