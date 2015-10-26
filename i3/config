@@ -31,14 +31,14 @@ set $w6 6: -Wall-
 
 ################################## Gaps
 ######################## Uncomment for use with i3-gaps
-#gaps inner 42
+gaps inner 42
 ######################## Compton w/ Shadows
-#exec compton -bc
+exec compton -bc
 ######################## Resize gaps
-#bindsym $mod+Shift+g gaps inner current plus 8
-#bindsym $mod+Shift+h gaps inner current minus 8
-#bindsym $mod+Shift+f gaps outer current minus 8
-#bindsym $mod+Shift+b gaps outer current plus 8
+bindsym $mod+Shift+g gaps inner current plus 8
+bindsym $mod+Shift+h gaps inner current minus 8
+bindsym $mod+Shift+f gaps outer current minus 8
+bindsym $mod+Shift+b gaps outer current plus 8
 
 
 ################################## Move
@@ -114,7 +114,7 @@ bindsym $mod+equal exec /usr/bin/pactl set-sink-volume 0 '+5%' && killall -SIGUS
 ################################## Bar
 ######################## Command
 bar {
-	status_command i3status -c ~/.i3/i3status.conf
+	status_command i3status -c ~/.config/i3/i3status.conf
 	position top
 
 	colors {

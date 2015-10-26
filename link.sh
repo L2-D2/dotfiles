@@ -6,5 +6,5 @@ ln -s ./vimrc $HOME/.vimrc
 ln -s ./bashrc $HOME/.bashrc
 ln -s ./bash_profile $HOME/.bash_profile
 ln -s ./xinitrc $HOME/.xinitrc
-ln -s ./i3/config $HOME/.i3/config
-ln -s ./i3/i3status.conf $HOME/.i3/i3status.conf
+ln -s ./i3/config $HOME/.config/i3/config
+ln -s ./i3/i3status.conf $HOME/.config/i3/i3status.conf
