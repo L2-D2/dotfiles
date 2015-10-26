@@ -2,9 +2,14 @@
 
 #Gonna start with hard coding each file.
 #TODO: Have it detect files then link them.
-ln -s ./vimrc $HOME/.vimrc
-ln -s ./bashrc $HOME/.bashrc
-ln -s ./bash_profile $HOME/.bash_profile
-ln -s ./xinitrc $HOME/.xinitrc
-ln -s ./i3/config $HOME/.config/i3/config
-ln -s ./i3/i3status.conf $HOME/.config/i3/i3status.conf
+ln -s $PWD/bashrc $HOME/.bashrc
+ln -s $PWD/bash_profile $HOME/.bash_profile
+ln -s $PWD/xinitrc $HOME/.xinitrc
+ln -s $PWD/i3/config $HOME/.config/i3/config
+ln -s $PWD/i3/i3status.conf $HOME/.config/i3/i3status.conf
+
+#Vim
+ln -s $PWD/vimrc $HOME/.vimrc
+ln -s $PWD/vimcolors/buddy.vim $HOME/.vim/colors/buddy.vim
+ln -s $PWD/vimcolors/vendetta.vim $HOME/.vim/colors/vendetta.vim
+ln -s $PWD/vimcolors/VIvid.vim $HOME/.vim/colors/VIvid.vim
