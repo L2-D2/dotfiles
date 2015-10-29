@@ -12,12 +12,12 @@ fi
 
 ################################## Exports
 ######################## PS1
-Cyan='\e[0;36m\]'
-Yellow='\e[1;33m\]'
-Red='\e[0;31m\]'
-Green='\e[0;32m\]'
-Off='\e[m\]'
-export PS1="$Cyan\A $Yellow\w $Green\$(parse_git_branch)\n$Red\\$ $Off"
+Cyan='\[\e[0;36m\]'
+Yellow='\[\e[1;33m\]'
+Red='\[\e[0;31m\]'
+Green='\[\e[0;32m\]'
+Off='\[\e[m\]'
+export PS1="\$(if [[ \$? == 0 ]]; then echo \"$Green\$?\"; else echo \"$Red\$?\"; fi) $Cyan\A $Yellow\w $Green\`parse_git_branch\`\n$Red\\\$$Off "
 ######################## Defaults
 export TERMINAL="urxvt -rv -tr -sh 11 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'"
 export EDITOR="gedit"
