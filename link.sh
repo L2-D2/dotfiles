@@ -1,7 +1,8 @@
 #RUN THIS SCRIPT INSIDE dotfiles/
 
 #Gonna start with hard coding each file.
-#TODO: Have it detect files then link them.
+#TODO: 	Have it detect files then link them.
+#	Have it not try to link files that already exist in target location.
 ln -s $PWD/bashrc $HOME/.bashrc
 ln -s $PWD/bash_profile $HOME/.bash_profile
 ln -s $PWD/xinitrc $HOME/.xinitrc
