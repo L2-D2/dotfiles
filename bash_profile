@@ -12,9 +12,14 @@ fi
 
 ################################## Exports
 ######################## PS1
-export PS1="\e[0;36m\A\e[m \e[1;33m\w\e[m\[\033[32m\]\$(parse_git_branch)\[\033[00m\] \n\e[0;31m\\$\e[m "
+Cyan='\e[0;36m\]'
+Yellow='\e[1;33m\]'
+Red='\e[0;31m\]'
+Green='\e[32m\]'
+Off='\e[m\]'
+export PS1="$Cyan\A $Yellow\w $Green\$(parse_git_branch)\n$Red\\$ $Off"
 ######################## Defaults
-export TERMINAL="uxterm -rv +sb -fa 'Dejavu Sans Mono:Book:pixelsize=11' -bw 0"
+export TERMINAL="urxvt -rv -tr -sh 11 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'"
 export EDITOR="gedit"
 ######################## ls colors
 export CLICOLOR=1
