@@ -11,7 +11,9 @@ for_window [class="atom"] border none
 set $mod Mod4
 ######################## Fonts
 font pango:DejaVu Sans Mono Book 8px
-set $font_11px Dejavu Sans Mono:book:pixelsize=11
+set $font_11px Dejavu Sans Mono:book:pixelsize=11 
+######################## Term
+set $term urxvt -rv -tr -sh 11 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'
 ######################## Colors
 set $blue	#3499DB
 set $green	#859900
@@ -62,7 +64,7 @@ bindsym $mod+Control+Right exec "i3-msg move right && i3-msg move right && i3-ms
 
 ################################## Control
 ######################## TERM
-bindsym $mod+Return exec --no-startup-id uxterm -rv +sb -bw 0 -fa '$font_11px'
+bindsym $mod+Return exec --no-startup-id $term
 ######################## DMENU
 bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
 ######################## Fullscreen
@@ -82,7 +84,7 @@ bindsym $mod+Shift+4 move container to workspace $w4
 bindsym $mod+Shift+5 move container to workspace $w5
 bindsym $mod+Shift+6 move container to workspace $w6
 ######################## Split
-bindsym $mod+Shift+s splitv; exec --no-startup-id uxterm -rv +sb -bw 0 -fa '$font_11px'
+bindsym $mod+Shift+s splitv; exec --no-startup-id $term
 ######################## Tabbed Layout
 bindsym $mod+t layout tabbed
 ######################## New Wallchanger
