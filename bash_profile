@@ -15,7 +15,7 @@ fi
 Cyan='\e[0;36m\]'
 Yellow='\e[1;33m\]'
 Red='\e[0;31m\]'
-Green='\e[32m\]'
+Green='\e[0;32m\]'
 Off='\e[m\]'
 export PS1="$Cyan\A $Yellow\w $Green\$(parse_git_branch)\n$Red\\$ $Off"
 ######################## Defaults
