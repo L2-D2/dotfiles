@@ -13,7 +13,7 @@ set $mod Mod4
 font pango:DejaVu Sans Mono Book 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11 
 ######################## Term
-set $term urxvt -rv -tr -sh 11 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'
+set $term urxvt -rv -tr -sh 21 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'
 ######################## Colors
 set $blue	#3499DB
 set $green	#859900
@@ -88,7 +88,7 @@ bindsym $mod+Shift+s splitv; exec --no-startup-id $term
 ######################## Tabbed Layout
 bindsym $mod+t layout tabbed
 ######################## New Wallchanger
-bindsym $mod+Shift+w exec "killall -SIGUSR1 wallchanger && wallchanger"
+bindsym $mod+Shift+w exec "killall -q wallchanger pornchanger; wallchanger"
 ######################## Kill Window
 bindsym $mod+Shift+q kill
 ######################## Floating Toggle
