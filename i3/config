@@ -10,7 +10,7 @@ for_window [class="atom"] border none
 ######################## Mod Key
 set $mod Mod4
 ######################## Fonts
-font pango:DejaVu Sans Mono Book 8px
+font pango:DejaVu Sans Mono Book, Awesome 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11 
 ######################## Term
 set $term urxvt -rv -tr -sh 21 +sb -fn 'xft:Dejavu Sans Mono:book:pixelsize=11'
@@ -24,12 +24,18 @@ set $base01	#586E75
 set $base1	#93A1A1
 set $base2	#EEE8D5
 ######################## Workspaces
-set $w1 1: First 
-set $w2 2: Second
-set $w3 3: Third 
-set $w4 4: Fourth
-set $w5 5: ------
-set $w6 6: -Wall-
+############## Firefox
+set $w1 "1: &#xf269;"
+############## Terminal
+set $w2 "2: &#xf120;"
+############## Steam
+set $w3 "3: &#xf1b6;"
+############## Paint 
+set $w4 "4: &#xf1fc;"
+############## Music
+set $w5 "5: &#xf001;"
+############## Wall
+set $w6 "6: &#xf108;"
 
 ################################## Gaps
 ######################## Uncomment for use with i3-gaps

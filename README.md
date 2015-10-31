@@ -7,3 +7,4 @@
   * [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
   * [compton](https://aur.archlinux.org/packages/compton/)
   * [i3-gaps-git](https://aur.archlinux.org/packages/i3-gaps-git/)
+  * [ttf-font-awesome](https://aur.archlinux.org/packages/ttf-font-awesome/)
