@@ -58,6 +58,11 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+######################## WASD to select
+bindsym $mod+A focus left
+bindsym $mod+S focus down
+bindsym $mod+W focus up
+bindsym $mod+D focus right
 ######################## Shift + arrows to move
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
