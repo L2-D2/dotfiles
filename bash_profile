@@ -42,6 +42,7 @@ alias x="startx"
 alias v="vim"
 alias g="lynx www.google.com"
 alias w="killall -SIGUSR1 wallchanger && wallchanger &"
+alias p="mpv"
 ######################## Git
 alias gs="git status"
 alias gl="git log"
