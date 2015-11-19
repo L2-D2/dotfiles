@@ -25,18 +25,26 @@ set $base01	#586E75
 set $base1	#93A1A1
 set $base2	#EEE8D5
 ######################## Workspaces
-############## Firefox
-set $w1 "1: &#xf269;"
-############## Terminal
-set $w2 "2: &#xf120;"
-############## Steam
-set $w3 "3: &#xf1b6;"
-############## Paint 
-set $w4 "4: &#xf1fc;"
-############## Inbox
-set $w5 "5: &#xf01c;"
-############## Wall
-set $w6 "6: &#xf108;"
+############## Chrome Firefox
+set $w1 "1: &#xf268;  &#xf269;"
+############## Terminal File
+set $w2 "2: &#xf120;  &#xf15c;"
+############## Inbox Twitter
+set $w3 "3: &#xf01c;  &#xf099;"
+############## Terminal Code
+set $w4 "4: &#xf120;  &#xf121;"
+############## Terminal Play 
+set $w5 "5: &#xf120;  &#xf04b;"
+############## Terminal Fork
+set $w6 "6: &#xf120;  &#xf126;"
+############## Barcode Linux Pied-Piper Trans Rebel Recycle
+set $w7 "7: &#xf02a; &#xf17c;  &#xf1a7;  &#xf225;  &#xf1d0;  &#xf1b8;"
+############## Gears Paint
+set $w8 "8: &#xf085;  &#xf1fc;"
+############## Whatsapp Slack
+set $w9 "9: &#xf232;  &#xf198;"
+############## Twitch Steam
+set $w0 "0: &#xf1e8;  &#xf1b7;"
 
 ################################## Gaps
 ######################## Uncomment for use with i3-gaps
@@ -88,6 +96,10 @@ bindsym $mod+3 workspace $w3
 bindsym $mod+4 workspace $w4
 bindsym $mod+5 workspace $w5
 bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+bindsym $mod+8 workspace $w8
+bindsym $mod+9 workspace $w9
+bindsym $mod+0 workspace $w0
 ######################## W/Move
 bindsym $mod+Shift+1 move container to workspace $w1
 bindsym $mod+Shift+2 move container to workspace $w2
@@ -95,6 +107,10 @@ bindsym $mod+Shift+3 move container to workspace $w3
 bindsym $mod+Shift+4 move container to workspace $w4
 bindsym $mod+Shift+5 move container to workspace $w5
 bindsym $mod+Shift+6 move container to workspace $w6
+bindsym $mod+Shift+7 move container to workspace $w7
+bindsym $mod+Shift+8 move container to workspace $w8
+bindsym $mod+Shift+9 move container to workspace $w9
+bindsym $mod+Shift+0 move container to workspace $w0
 ######################## Split
 bindsym $mod+Shift+s splitv; exec --no-startup-id $term_vars 'xft:$font_11px'
 ######################## Tabbed Layout
