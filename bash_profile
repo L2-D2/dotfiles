@@ -1,7 +1,6 @@
 ################################## Git
 ######################## branch in prompt
 parse_git_branch() {
-
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 
 }
@@ -24,6 +23,13 @@ export EDITOR="gedit"
 ######################## ls colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+######################## PATHs
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.gem/ruby/2.1.0/bin
+export PATH=/usr/local/heroku/bin:$PATH
+######################## XDG
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
 
 ################################## Aliases
 ######################## ls
@@ -54,10 +60,6 @@ alias gf="git pull"
 ######################## Misc
 alias bat="upower --dump | less"
 
-################################## PATHs
-export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/.gem/ruby/2.1.0/bin
-export PATH=/usr/local/heroku/bin:$PATH
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
