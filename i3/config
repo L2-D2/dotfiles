@@ -86,7 +86,7 @@ bindsym $mod+Control+Right exec "i3-msg move right && i3-msg move right && i3-ms
 ######################## TERM
 bindsym $mod+Return exec --no-startup-id $term_vars 'xft: $font_11px'
 ######################## DMENU
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
+bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
 ######################## Fullscreen
 bindsym $mod+f fullscreen
 ######################## W/Switch
@@ -115,6 +115,8 @@ bindsym $mod+Shift+0 move container to workspace $w0
 bindsym $mod+Shift+s splitv; exec --no-startup-id $term_vars 'xft:$font_11px'
 ######################## Tabbed Layout
 bindsym $mod+t layout tabbed
+######################## Split Layout
+bindsym $mod+Shift+t layout splitv
 ######################## New Wallchanger
 bindsym $mod+Shift+w exec "killall -q wallchanger pornchanger; wallchanger"
 ######################## Kill Window
