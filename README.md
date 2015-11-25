@@ -8,3 +8,4 @@
   * [compton](https://aur.archlinux.org/packages/compton/)
   * [i3-gaps-git](https://aur.archlinux.org/packages/i3-gaps-git/)
   * [ttf-font-awesome](https://aur.archlinux.org/packages/ttf-font-awesome/)
+  * [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop-git/)
