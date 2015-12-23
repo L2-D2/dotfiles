@@ -5,6 +5,7 @@ for_window [class="^.*"] border pixel 1
 for_window [class="firefox"] border none
 for_window [class="steam"] border none
 for_window [class="atom"] border none
+for_window [class="chrome"] border none
 
 ################################## $VARS
 ######################## Mod Key
@@ -14,7 +15,7 @@ set $font_pango DejaVu Sans Mono Book, Awesome 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11
 font pango:$font_pango
 ######################## Term
-set $term_vars urxvt -rv -tr -sh 21 +sb -fn
+set $term_vars urxvt -rv -tr -sh 13 +sb -fn
 ######################## Colors
 set $blue	#3499DB
 set $green	#859900
@@ -111,37 +112,37 @@ bindsym $mod+Shift+7 move container to workspace $w7
 bindsym $mod+Shift+8 move container to workspace $w8
 bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w0
-######################## Split
+#########################Split#####
 bindsym $mod+Shift+s splitv; exec --no-startup-id $term_vars 'xft:$font_11px'
-######################## Tabbed Layout
+#################Tabbed Layout##### 
 bindsym $mod+t layout tabbed
-######################## Split Layout
+##################Split Layout##### 
 bindsym $mod+Shift+t layout splitv
-######################## New Wallchanger
+###############New Wallchanger##### 
 bindsym $mod+Shift+w exec "killall -q wallchanger pornchanger; wallchanger"
-######################## Kill Window
+###################Kill Window##### 
 bindsym $mod+Shift+q kill
-######################## Floating Toggle
+###############Floating Toggle##### 
 bindsym $mod+Shift+space floating toggle
-######################## Reload i3
+#####################Reload i3##### 
 bindsym $mod+Shift+c reload
-######################## Restart i3
+####################Restart i3##### 
 bindsym $mod+Shift+r restart
-######################## Exit i3
+#######################Exit i3##### 
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'OMG SAVE EVERYTHING!!!' -b 'Yes, exit i3' 'i3-msg exit'"
-######################## Lock Desktop
+##################Lock Desktop##### 
 bindsym $mod+Shift+l exec "/usr/local/bin/i3lock-fancy/lock"
-######################## Vol+
+##########################Vol+##### 
 bindsym $mod+minus exec /usr/bin/pactl set-sink-volume 0 '-5%' && killall -SIGUSR1 i3status
-######################## Vol-
+##########################Vol-##### 
 bindsym $mod+equal exec /usr/bin/pactl set-sink-volume 0 '+5%' && killall -SIGUSR1 i3status
 
 ################################## Theme
-#				Border		Backgnd		Text		Indicator
-#client.focused 		$blue		$blue		$base2		$green
-#client.unfocused 		$base2		$base2		$base03		$base2
-#client.focused_inactive	$blue		$base2		$base01		$base2
-#client.urgent 			$magenta	$base2		$base2		$base2
+#			Border		Backgnd		Text		Indicator
+client.focused 		$blue		$blue		$base2		$green
+client.unfocused 	$base2		$base2		$base03		$base2
+client.focused_inactive	$blue		$base2		$base01		$base2
+client.urgent 		$magenta	$base2		$base2		$base2
 
 ################################## Bar
 ######################## Command
