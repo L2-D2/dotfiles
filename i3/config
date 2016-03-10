@@ -140,7 +140,7 @@ bindsym $mod+equal exec /usr/bin/pactl set-sink-volume 0 '+5%' && killall -SIGUS
 ################################## Theme
 #			Border		Backgnd		Text		Indicator
 client.focused 		$blue		$blue		$base2		$green
-client.unfocused 	$base2		$base2		$base03		$base2
+client.unfocused 	$base03		$base03		$base01		$base2
 client.focused_inactive	$blue		$base2		$base01		$base2
 client.urgent 		$magenta	$base2		$base2		$base2
 
