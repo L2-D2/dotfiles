@@ -9,6 +9,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+################################## Calculator
+calc(){ awk "BEGIN{ print $* }" ;}
+
 ################################## Exports
 ######################## PS1
 Cyan='\[\e[0;36m\]'
