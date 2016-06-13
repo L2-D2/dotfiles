@@ -4,6 +4,7 @@ for_window [class="^.*"] border pixel 1
 ######################## Borderless
 for_window [class="firefox"] border none
 for_window [class="steam"] border none
+for_window [class="steam"] tabbed enable
 for_window [class="atom"] border none
 for_window [class="chrome"] border none
 
