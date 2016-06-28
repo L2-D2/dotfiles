@@ -10,7 +10,10 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 ################################## Calculator
-calc(){ awk "BEGIN{ print $* }" ;}
+#calc(){ awk "BEGIN{ print $* }" ;}
+
+################################## Disable PC Beep
+xset -b
 
 ################################## Exports
 ######################## PS1
@@ -28,7 +31,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 ######################## PATHs
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/.gem/ruby/2.1.0/bin
+#export PATH=$PATH:~/.gem/ruby/2.1.0/bin
 export PATH=/usr/local/heroku/bin:$PATH
 ######################## XDG
 export XDG_CONFIG_HOME=$HOME/.config
@@ -66,3 +69,7 @@ alias bat="upower --dump | less"
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$HOME/.rvm/gems:$PATH"
+
+################################## 38Z
+source "/home/tina/workspace/38z/38z.env"
