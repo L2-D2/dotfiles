@@ -15,6 +15,9 @@ fi
 ################################## Disable PC Beep
 xset -b
 
+################################## ssh-agent
+eval $(ssh-agent)
+
 ################################## Exports
 ######################## PS1
 Cyan='\[\e[0;36m\]'
@@ -73,3 +76,4 @@ export PATH="$HOME/.rvm/gems:$PATH"
 
 ################################## 38Z
 source "/home/tina/workspace/38z/38z.env"
+
