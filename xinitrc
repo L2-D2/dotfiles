@@ -2,6 +2,8 @@
 gnome-screensaver &
 rfkill unblock wifi &
 wallchanger &
+#feh ~/images/walls/fQkJ3k2.jpg
+eval $(ssh-agent) &
 #sxhkd &
 
 ################################## Pantheon
@@ -14,7 +16,7 @@ wallchanger &
 #export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 #exec cerbere
 
-#### WM
+################################## WM
 #exec gnome-session
 exec i3
 #exec bspwm
