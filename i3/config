@@ -148,7 +148,7 @@ client.urgent 		$magenta	$base2		$base2		$base2
 ################################## Bar
 ######################## Command
 bar {
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3status -c ~/.i3/i3status.conf
 	font pango:$font_pango
 	position top
 
@@ -161,3 +161,7 @@ bar {
     urgent_workspace   $magenta $base03 $base01
   }
 }
+
+################################## Startup
+exec wallchanger
+exec /usr/lib/cinnamon-settings-daemon/cinnamon-settings/daemon

@@ -47,10 +47,15 @@ alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 ######################## Pacman
+alias pacman="pacman --color auto"
 alias pacI="sudo pacman -S"
 alias pacS="pacman -Ss"
 alias pacR="sudo pacman -R"
-alias pacU="sudo pacman -Syu"
+######################## Funsies
+alias hacktheplanet="sudo pacman -Syu"
+alias yogurt='yaourt'
+alias oops="!! | less"
+alias frak="sudo !!"
 ######################## Singles
 alias t="$TERMINAL"
 alias x="startx"
@@ -66,6 +71,8 @@ alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit -m"
 alias gf="git pull"
+alias gpo="git push origin"
+alias gpom="git push origin master"
 ######################## Misc
 alias shuf="mpv --shuffle"
 alias bat="watch upower --dump"
@@ -76,5 +83,6 @@ alias ing="ping -c 3 8.8.8.8"
 export PATH="$HOME/.rvm/gems:$PATH"
 
 ################################## 38Z
-source "/home/tina/workspace/38z/38z.env"
+source "/home/tina/workspace/38z/.38z.env"
+source "/home/tina/workspace/38z/.profile"
 
