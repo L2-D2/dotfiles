@@ -10,7 +10,7 @@ for_window [class="chrome"] border none
 
 ################################## $VARS
 ######################## Mod Key
-set $mod Mod4
+set $mod Mod1
 ######################## Fonts
 set $font_pango DejaVu Sans Mono Book, Awesome 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11
@@ -148,7 +148,7 @@ client.urgent 		$magenta	$base2		$base2		$base2
 ################################## Bar
 ######################## Command
 bar {
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3status -c ~/.i3/i3status.conf
 	font pango:$font_pango
 	position top
 
@@ -161,3 +161,7 @@ bar {
     urgent_workspace   $magenta $base03 $base01
   }
 }
+
+################################## Startup
+exec wallchanger
+exec /usr/lib/cinnamon-settings-daemon/cinnamon-settings/daemon
