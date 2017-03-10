@@ -16,7 +16,7 @@ fi
 xset -b
 
 ################################## ssh-agent
-eval $(ssh-agent)
+# eval $(ssh-agent)
 
 ################################## Exports
 ######################## PS1
@@ -48,7 +48,7 @@ alias lal='ls -al'
 alias ll='ls -l'
 ######################## Pacman
 alias pacI="sudo pacman -S"
-alias pacS="sudo pacman -Ss"
+alias pacS="pacman -Ss"
 alias pacR="sudo pacman -R"
 alias pacU="sudo pacman -Syu"
 ######################## Singles
@@ -67,8 +67,9 @@ alias gaa="git add ."
 alias gc="git commit -m"
 alias gf="git pull"
 ######################## Misc
-alias bat="upower --dump | less"
-
+alias shuf="mpv --shuffle"
+alias bat="watch upower --dump"
+alias ing="ping -c 3 8.8.8.8"
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
