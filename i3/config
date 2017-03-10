@@ -10,7 +10,7 @@ for_window [class="chrome"] border none
 
 ################################## $VARS
 ######################## Mod Key
-set $mod Mod4
+set $mod Mod1
 ######################## Fonts
 set $font_pango DejaVu Sans Mono Book, Awesome 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11
@@ -27,14 +27,14 @@ set $base01	#586E75
 set $base1	#93A1A1
 set $base2	#EEE8D5
 ######################## Workspaces
-############## Chrome Firefox
-set $w1 "1: &#xf268;  &#xf269;"
 ############## Terminal File
-set $w2 "2: &#xf120;  &#xf15c;"
-############## Inbox Twitter
-set $w3 "3: &#xf01c;  &#xf099;"
+set $w1 "1: &#xf120;  &#xf15c;"
+############## Chrome Firefox
+set $w2 "2: &#xf268;  &#xf269;"
 ############## Terminal Code
-set $w4 "4: &#xf120;  &#xf121;"
+set $w3 "3: &#xf120;  &#xf121;"
+############## Inbox Twitter
+set $w4 "4: &#xf01c;  &#xf099;"
 ############## Terminal Play 
 set $w5 "5: &#xf120;  &#xf04b;"
 ############## Terminal Fork
