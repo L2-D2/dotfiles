@@ -46,9 +46,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 ################################## Aliases
 ######################## ls
 alias ls='ls -F --color=auto'
-alias la='ls -a'
-alias lal='ls -al'
-alias ll='ls -l'
+alias la='ls -Fa --color=auto'
+alias lal='ls -alh --color=auto'
+alias ll='ls -lh --color=auto'
 ######################## Pacman
 alias pacman="pacman --color auto"
 alias pacI="sudo pacman -S"
@@ -65,7 +65,7 @@ alias x="startx"
 alias v="vim"
 alias g="lynx www.google.com"
 alias w="killall -SIGUSR1 wallchanger && wallchanger &"
-alias p="mpv"
+alias p="mpv --no-audio-display"
 ######################## Git
 alias gs="git status"
 alias gl="git log"
@@ -80,13 +80,13 @@ alias gpom="git push origin master"
 alias shuf="mpv --shuffle"
 alias bat="watch upower --dump"
 alias ing="ping -c 3 8.8.8.8"
-alias groovesalad="mpv http://ice1.somafm.com/groovesalad-256-mp3"
+alias groovesalad="mpv http://ice1.somafm.com/groovesalad-256-mp3 --vo=null"
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$HOME/.rvm/gems:$PATH"
 
 ################################## 38Z
-source "/home/tina/workspace/38z/.38z.env"
-source "/home/tina/workspace/38z/.profile"
+#source "/home/tina/workspace/38z/.38z.env"
+#source "/home/tina/workspace/38z/.profile"
 
