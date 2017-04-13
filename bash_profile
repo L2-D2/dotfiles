@@ -77,6 +77,7 @@ alias gpom="git push origin master"
 alias shuf="mpv --shuffle"
 alias bat="watch upower --dump"
 alias ing="ping -c 3 8.8.8.8"
+alias groovesalad="mpv http://ice1.somafm.com/groovesalad-256-mp3"
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
