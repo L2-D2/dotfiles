@@ -83,6 +83,6 @@ alias ing="ping -c 3 8.8.8.8"
 export PATH="$HOME/.rvm/gems:$PATH"
 
 ################################## 38Z
-source "/home/tina/workspace/38z/.38z.env"
-source "/home/tina/workspace/38z/.profile"
+#source "/home/tina/workspace/38z/.38z.env"
+#source "/home/tina/workspace/38z/.profile"
 
