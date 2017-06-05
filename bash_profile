@@ -1,4 +1,4 @@
-################################## Vi Controls
+################################# Vi Controls
 set -o vi
 
 ################################## Git
@@ -77,14 +77,19 @@ alias gf="git pull"
 alias gpo="git push origin"
 alias gpom="git push origin master"
 ######################## Misc
-alias shuf="mpv --shuffle"
+alias shuf="mpv --vo=null --shuffle"
 alias bat="watch upower --dump"
 alias ing="ping -c 3 8.8.8.8"
+alias mkdir="mkdir -p"
 ################### Internet Radio
 alias lofi="mpv --vo=null --msg-level=ffmpeg=fatal ytdl://xrbrQhpvn8E"
+alias neowave="mpv --vo=null --msg-level=ffmpeg=fatal ytdl://6doVrCJcWWI"
 alias groovesalad="mpv --vo=null http://ice1.somafm.com/groovesalad-256-mp3"
 alias lush="mpv --vo=null http://ice1.somafm.com/lush-128-mp3"
 alias fluid="mpv --vo=null http://ice1.somafm.com/fluid-128-mp3"
+alias wubstep="mpv --vo=null http://ice1.somafm.com/dubstep-128-mp3" 
+alias cliqhop="mpv --vo=null http://ice1.somafm.com/cliqhop-128-mp3"
+alias trapfm="mpv --vo=null http://stream.trap.fm:6002"
 
 ################################## RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
