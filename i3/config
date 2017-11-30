@@ -137,6 +137,9 @@ bindsym $mod+Shift+l exec "/usr/local/bin/i3lock-fancy/lock"
 bindsym $mod+minus exec /usr/bin/pactl set-sink-volume 0 '-5%' && killall -SIGUSR1 i3status
 ##########################Vol-##### 
 bindsym $mod+equal exec /usr/bin/pactl set-sink-volume 0 '+5%' && killall -SIGUSR1 i3status
+####################Brightness#####
+bindsym $mod+Shift+equal exec xbacklight -inc 5
+bindsym $mod+Shift+minus exec xbacklight -dec 5
 
 ################################## Theme
 #			Border		Backgnd		Text		Indicator
