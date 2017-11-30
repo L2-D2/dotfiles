@@ -132,7 +132,7 @@ bindsym $mod+Shift+r restart
 #######################Exit i3##### 
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'OMG SAVE EVERYTHING!!!' -b 'Yes, exit i3' 'i3-msg exit'"
 ##################Lock Desktop##### 
-bindsym $mod+Shift+l exec "/usr/local/bin/i3lock-fancy/lock"
+bindsym $mod+Shift+l exec "/usr/bin/i3lock-fancy"
 ##########################Vol+##### 
 bindsym $mod+minus exec /usr/bin/pactl set-sink-volume 0 '-5%' && killall -SIGUSR1 i3status
 ##########################Vol-##### 
