@@ -7,6 +7,7 @@ for_window [class="steam"] border none
 for_window [class="steam"] tabbed enable
 for_window [class="atom"] border none
 for_window [class="chrome"] border none
+for_window [class="mpv"] floating enable 
 
 ################################## $VARS
 ######################## Mod Key
@@ -15,6 +16,8 @@ set $mod Mod1
 set $font_pango DejaVu Sans Mono Book, Awesome 8px
 set $font_11px Dejavu Sans Mono:book:pixelsize=11
 font pango:$font_pango
+######################## Rofi Theme
+set $rofi_theme /home/tina/.config/rofi/Adapta-Nokto.rasi
 ######################## Term
 set $term_vars urxvt -rv -tr -sh 13 +sb -fn
 ######################## Colors
@@ -88,7 +91,10 @@ bindsym $mod+Control+Right exec "i3-msg move right && i3-msg move right && i3-ms
 ######################## TERM
 bindsym $mod+Return exec --no-startup-id $term_vars 'xft: $font_11px'
 ######################## DMENU
-bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
+#bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -nb '$base03' -nf '$base1' -sb '$base2' -sf '$base03' -fn '$font_11px'"
+######################## ROFI
+bindsym $mod+space exec --no-startup-id "rofi -modi run,drun -show drun -lines 6 -config $rofi_theme"
+bindsym $mod+Tab exec --no-startup-id "rofi -show window -config $rofi_theme"
 ######################## Fullscreen
 bindsym $mod+f fullscreen
 ######################## W/Switch
@@ -167,4 +173,6 @@ bar {
 
 ################################## Startup
 exec wallchanger
+exec nm-applet
+exec caffine-ng
 exec /usr/lib/cinnamon-settings-daemon/cinnamon-settings/daemon
