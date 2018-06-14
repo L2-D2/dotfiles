@@ -79,7 +79,7 @@ alias gpom="git push origin master"
 ######################## Misc
 alias shuf="mpv --vo=null --shuffle"
 alias bat="watch upower --dump"
-alias ing="ping -c 3 8.8.8.8"
+alias ing="ping -c 5 8.8.8.8"
 alias mkdir="mkdir -p"
 ################### Internet Radio
 alias lofi="mpv --vo=null --msg-level=ffmpeg=fatal ytdl://xrbrQhpvn8E"
